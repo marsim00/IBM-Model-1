@@ -1,5 +1,5 @@
-# Implementation of the IBM Model 1
-Model is trained and tested for the translation from English to French.
+# IBM Model 1
+Implementation of the statistical machine translation algorithm IBM Model 1. Model was trained for the translation from English to French.
 
 ## Project structure
 
