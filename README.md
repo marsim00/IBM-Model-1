@@ -28,13 +28,13 @@ Command for the Windows command line: python read_align.py -f eng_fr_thr_0.1 | p
 All models were trained on the whole data set (100000 sentences). The IBM model (current implementation) was trained with normalization parameter e = 10 and until convergence rate reached 1000. That took 21 iterations of expectation maximization step with duration of approximately 40 minutes. 
 
 
-|                  |     IBM (0.1)    |     IBM (0.2)    |     IBM (0.4)    |     Berkeley IBM    |     Berkeley HMM    |     Simple aligner (0.8)    |
+|                  |     IBM (0.1)    |     IBM (0.2)    |     IBM (0.4)    |     Berkeley IBM    |     Berkeley HMM    |     Simple aligner (Dice 0.8)    |
 |------------------|------------------|------------------|------------------|---------------------|---------------------|----------------------------------|
 |     Precision    |     0.667        |     0.733        |     0.768        |     0.764           |     0.882           |     0.460                        |
 |     Recall       |     0.701        |     0.639        |     0.459        |     0.772           |     0.935           |     0.251                        |
 |     AER          |     0.320        |     0.311        |     0.415        |     0.233           |     0.099           |     0.670                        |
 
-In brackets decoding thresholds are indicated (alignment was added if it's probability exceded the threshold).
+In brackets decoding thresholds are indicated: alignment was added if it's probability exceded the threshold (IBM model) or Dice coefficient (simple aligner).
 
 The best IBM model performance is achieved with the threshold 0.2 (although presicion is lower than for a model with a 0.4 threshold, AER is much lower).
 All models are outperformed by Berkeley HMM, having the highest precision and recall and the lowest AER. 
