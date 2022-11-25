@@ -1,0 +1,5 @@
+*.align linguist-detectable=false
+*.a linguist-detectable=false
+*.e linguist-detectable=false
+*.f linguist-detectable=false
+*.conf linguist-detectable=false
