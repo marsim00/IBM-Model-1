@@ -15,7 +15,7 @@ The model itself is implemented in *IBM_utils.py* and is executed in *main.py*.
 "jhu" folder contains a simple aligner (*align*) and evaluation scripts (*check_alignments.py* and *score_alignments.py*) from the [homework](http://mt-class.org/jhu/hw1.html) for the Machine Translation class at John Hopkins University ([repository](https://github.com/xutaima/jhu-mt-hw/tree/master/hw2)). These scripts are used for the evaluation of my model and for its comparison with the simple aligner.
 
 ### Evaluation
-Evaluation of alignments is performed by using evaluation.py, check-alignments.py and score-alignments.py. The output of the evaluation are precision, recall and AER estimates.
+Evaluation of alignments is performed by using evaluation.py, check-alignments.py and score-alignments.py. The output of the evaluation are precision, recall and alignment error rate (AER) estimates.
 
 *Example*
 
@@ -25,4 +25,16 @@ Command for the Windows command line: python read_align.py -f eng_fr_thr_0.1 | p
 
 ## Evaluation Results and Model Comparison
 
+All models were trained on the whole data set (100000 sentences). The IBM model (current implementation) was trained with normalization parameter e = 10 and until convergence rate reached 1000. That took 21 iterations of expectation maximization step with duration of approximately 40 minutes. 
 
+
+|                  |     IBM (0.1)    |     IBM (0.2)    |     IBM (0.4)    |     Berkeley IBM    |     Berkeley HMM    |     Simple aligner (0.8)    |
+|------------------|------------------|------------------|------------------|---------------------|---------------------|----------------------------------|
+|     Precision    |     0.667        |     0.733        |     0.768        |     0.764           |     0.882           |     0.460                        |
+|     Recall       |     0.701        |     0.639        |     0.459        |     0.772           |     0.935           |     0.251                        |
+|     AER          |     0.320        |     0.311        |     0.415        |     0.233           |     0.099           |     0.670                        |
+
+In brackets decoding thresholds are indicated (alignment was added if it's probability exceded the threshold).
+
+The best IBM model performance is achieved with the threshold 0.2 (although presicion is lower than for a model with a 0.4 threshold, AER is much lower).
+All models are outperformed by Berkeley HMM, having the highest precision and recall and the lowest AER. 
