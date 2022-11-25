@@ -21,7 +21,7 @@ Evaluation of alignments is performed by using evaluation.py, check-alignments.p
 
 Evaluation of a model with a 0.1 threshold.
 
-Command for the Windows command line: python read_align.py -f eng_fr_thr_0.1 | python jhu/check-alignments | python jhu/score-alignments
+**Command for the Windows command line**: *python read_align.py -f eng_fr_thr_0.1 | python jhu/check-alignments | python jhu/score-alignments*
 
 ## Evaluation Results and Model Comparison
 
