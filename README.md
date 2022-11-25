@@ -43,7 +43,7 @@ All models are outperformed by Berkeley HMM, having the highest precision and re
 
 [Adam Lopez. Word Alignment and the Expectation-Maximization Algorithm](http://mt-class.org/jhu/assets/papers/alopez-model1-tutorial.pdf)
 
-[Philipp Koehn. 2022. IBM Model 1 and the EM Algorithm](http://mt-class.org/jhu/slides/lecture-ibm-model1.pdf)
+[Philipp Koehn (2022). IBM Model 1 and the EM Algorithm](http://mt-class.org/jhu/slides/lecture-ibm-model1.pdf)
 
 ## Note
 
