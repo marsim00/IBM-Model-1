@@ -1,0 +1,160 @@
+Alignments for the translation:
+English: "The commisionners went on :"
+French: "Je pursuis la lecture de les recommandations de les commissaires:"
+
+Simple aligner 0.8
+
+Alignment 1  KEY: ( ) = guessed, * = sure, ? = possible
+  ---------------
+ | ?  ?  ?  ?     | je
+ | ?  ?  ?  ?     | poursuis
+ | ?  ?  ?  ?     | la
+ | ?  ?  ?  ?     | lecture
+ | ?  ?  ?  ?     | de
+ | ?  ?  ?  ?     | les
+ | ?  ?  ?  ?     | recommandations
+ | ?  ?  ?  ?     | de
+ | *  ?  ?  ?     | les
+ | ?  *  ?  ?     | commissaires
+ |            (*) | :
+  ---------------
+   t  c  w  o  :
+   h  o  e  n
+   e  m  n
+      m  t
+      i
+      s
+      s
+      i
+      o
+      n
+      n
+      e
+      r
+      s
+
+Berkeley IBM
+
+Alignment 1  KEY: ( ) = guessed, * = sure, ? = possible
+  ---------------
+ | ?  ?  ? (?)    | je
+ | ? (?) ?  ?     | poursuis
+ |(?) ?  ?  ?     | la
+ | ?  ? (?) ?     | lecture
+ | ?  ?  ? (?)    | de
+ | ?  ?  ?  ?     | les
+ | ?  ? (?) ?     | recommandations
+ | ?  ?  ? (?)    | de
+ | *  ?  ?  ?     | les
+ | ?  *  ?  ?     | commissaires
+ |            (*) | :
+  ---------------
+   t  c  w  o  :
+   h  o  e  n
+   e  m  n
+      m  t
+      i
+      s
+      s
+      i
+      o
+      n
+      n
+      e
+      r
+      s
+
+
+Berkeley HMM
+
+ Alignment 1  KEY: ( ) = guessed, * = sure, ? = possible
+  ---------------
+ | ?  ?  ?  ?     | je
+ | ? (?) ?  ?     | poursuis
+ |(?) ?  ?  ?     | la
+ | ?  ? (?) ?     | lecture
+ | ?  ?  ? (?)    | de
+ | ?  ?  ?  ?     | les
+ | ?  ? (?) ?     | recommandations
+ | ?  ?  ? (?)    | de
+ | *  ?  ?  ?     | les
+ | ?  *  ?  ?     | commissaires
+ |            (*) | :
+  ---------------
+   t  c  w  o  :
+   h  o  e  n
+   e  m  n
+      m  t
+      i
+      s
+      s
+      i
+      o
+      n
+      n
+      e
+      r
+      s
+
+
+IBM (0.1)
+
+Alignment 1  KEY: ( ) = guessed, * = sure, ? = possible
+  ---------------
+ | ? (?) ?  ?     | je
+ | ? (?) ?  ?     | poursuis
+ |(?) ?  ?  ?     | la
+ | ? (?) ?  ?     | lecture
+ | ?  ?  ? (?)    | de
+ | ? (?) ?  ?     | les
+ | ? (?) ?  ?     | recommandations
+ | ?  ?  ? (?)    | de
+ | * (?) ?  ?     | les
+ | ? (*) ?  ?     | commissaires
+ |            (*) | :
+  ---------------
+   t  c  w  o  :
+   h  o  e  n
+   e  m  n
+      m  t
+      i
+      s
+      s
+      i
+      o
+      n
+      n
+      e
+      r
+      s
+
+IBM (0.2) 
+
+Alignment 1  KEY: ( ) = guessed, * = sure, ? = possible
+  ---------------
+ | ?  ?  ?  ?     | je
+ | ?  ?  ?  ?     | poursuis
+ | ?  ?  ?  ?     | la
+ | ?  ?  ?  ?     | lecture
+ | ?  ?  ? (?)    | de
+ | ?  ?  ?  ?     | les
+ | ?  ?  ?  ?     | recommandations
+ | ?  ?  ? (?)    | de
+ | *  ?  ?  ?     | les
+ | ?  *  ?  ?     | commissaires
+ |            (*) | :
+  ---------------
+   t  c  w  o  :
+   h  o  e  n
+   e  m  n
+      m  t
+      i
+      s
+      s
+      i
+      o
+      n
+      n
+      e
+      r
+      s
