@@ -15,12 +15,14 @@ The model itself is implemented in *IBM_utils.py* and is executed in *main.py*.
 "jhu" folder contains a simple aligner (*align*) and evaluation scripts (*check_alignments.py* and *score_alignments.py*) from the [homework](http://mt-class.org/jhu/hw1.html) for the Machine Translation class at John Hopkins University ([repository](https://github.com/xutaima/jhu-mt-hw/tree/master/hw2)). These scripts are used for the evaluation of my model and for its comparison with the simple aligner.
 
 ### Evaluation
-Evaluation of alignments is performed by using evaluation.py, check_alignments.py and score_alignments.py. The output of the evaluation are precision, recall and AER estimates.
+Evaluation of alignments is performed by using evaluation.py, check-alignments.py and score-alignments.py. The output of the evaluation are precision, recall and AER estimates.
 
 *Example*
 
 Evaluation of a model with a 0.1 threshold.
 
-Command for the Windows command line: python evaluation.py -f eng_fr_thr_0.1 | python jhu/check-alignments | python jhu/score-alignments
+Command for the Windows command line: python read_align.py -f eng_fr_thr_0.1 | python jhu/check-alignments | python jhu/score-alignments
 
 ## Evaluation Results and Model Comparison
+
+
