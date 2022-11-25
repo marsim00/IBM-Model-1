@@ -52,4 +52,4 @@ Examples of alignments produced by different models are provided in alignment_ou
 
 ## Note
 
-The project is created as the homework for the Computational Linguistics course at Language Science & Technology program, Saarland University. 
+The project is created as a homework for the Computational Linguistics course at Language Science & Technology program, Saarland University. 
