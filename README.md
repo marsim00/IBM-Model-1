@@ -8,7 +8,7 @@ The model itself is implemented in *IBM_utils.py* and is executed in *main.py*.
 
 "data" folder contains the data for training (hansards.e - English sentences, hansards.f - French sentences, 100000 each) and testing (hansards.a - alignments of the first 37 sentences) (derived from Canadian Hansards, aligned by Ulrich Germann).
 
-"alignment_outputs" folder contains output alignments for the implemented IBM model (three eng_fr_thr_\*\*\*.align for different thresholds), as well as outputs produced by Berkeley aligner using HMM (berkeley_hmm.align) and IBM Model 1 (berkeley_ibm.align)
+"alignment_outputs" folder contains output alignments for the implemented IBM model (three eng_fr_thr_\*\*\*.align for different thresholds), as well as outputs produced by Berkeley aligner using HMM (berkeley_hmm.align) and IBM Model 1 (berkeley_ibm.align). "produced_alignments.txt" contains examples of alignments produced by different models.
 
 "berkeley_config" folder contains configuration files for both HMM and IBM1 used in Berkeley Aligner (for the further comparison with my model).
 
@@ -37,7 +37,9 @@ All models were trained on the whole data set (100000 sentences). The IBM model 
 <sub>In brackets decoding thresholds are indicated: alignment was added if its probability exceded the threshold (IBM model) or Dice coefficient (simple aligner).</sub>
 
 The best IBM model performance is achieved with the threshold 0.2 (although presicion is lower than for a model with a 0.4 threshold, AER is much lower).
-All models are outperformed by Berkeley HMM, having the highest precision and recall and the lowest AER. 
+All models are outperformed by Berkeley HMM, having the highest precision and recall and the lowest AER.
+
+Examples of alignments produced by different models are provided in alignment_outputs/produced_alignments.txt
 
 ## References
 
